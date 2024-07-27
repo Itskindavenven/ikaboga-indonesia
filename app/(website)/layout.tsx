@@ -12,14 +12,14 @@ async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
-      template: "%s | Stablo"
+        "Padukuhan Bengle - Kalurahan Pucung - Kapanewon Girisubo",
+      template: "%s | Bengle"
     },
     description:
       settings?.description ||
-      "Stablo - popular open-source next.js and sanity blog template",
+      "Padukuhan Bengle - Kalurahan Pucung - Kapanewon Girisubo",
     keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+    authors: [{ name: "Itskindavenven" }],
     canonical: settings?.url,
     openGraph: {
       images: [
