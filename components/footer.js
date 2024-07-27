@@ -63,7 +63,7 @@ const Backlink = () => {
         viewBox="0 0 30 30"
         fill="none"
         className="h-4 w-4"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="https://desapucung.gunungkidulkab.go.id/assets/files/logo/gkk.png">
         <rect
           width="30"
           height="29.5385"
