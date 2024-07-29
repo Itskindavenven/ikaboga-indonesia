@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -9,6 +10,14 @@ export default function Carousel() {
     "https://picsum.photos/1200/502"
   ];
 
+  useEffect(() => {
+    const autoSlide = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 3000); // Slide interval in milliseconds
+
+    return () => clearInterval(autoSlide);
+  }, []);
+
   const handlePrevClick = () => {
     setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
   };
@@ -17,8 +26,15 @@ export default function Carousel() {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleNextClick(),
+    onSwipedRight: () => handlePrevClick(),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
+
   return (
-    <div className="relative w-full max-w-6xl mx-auto">
+    <div {...handlers} className="relative w-full max-w-6xl mx-auto">
       <div className="overflow-hidden rounded-lg shadow-lg">
         <div className="relative w-full h-96">
           {slides.map((slide, index) => (
