@@ -29,7 +29,26 @@ export default function Post({ posts }) {
 
   return (
     <>
-      <Carousel />
+      <div className="relative hero-section bg-cover bg-center py-16" style={{ backgroundImage: "url('/img/hero-bengle-padukuhan.png')" }}>
+        <div className="absolute inset-0 bg-black opacity-80"></div> {/* Dark overlay */}
+        <Carousel />
+        <Container>
+          <div className="relative text-center text-white">
+            <h1 className="text-4xl font-extrabold mb-4">Welcome To Padukuhan Bengle Website</h1>
+            <p className="text-lg font-medium text-gray-200 mt-2">
+            Padukuhan Bengle, yang terletak di Kalurahan Pucung, Kecamatan Girisubo, Kabupaten Gunung Kidul, Provinsi Daerah Istimewa Yogyakarta, adalah sebuah dusun yang memikat dengan pesona keindahan alamnya yang menakjubkan serta kearifan lokal yang tetap terjaga dengan baik. Terletak di tengah-tengah perbukitan yang hijau dan subur, Bengle menawarkan pemandangan alam yang mempesona dan suasana yang damai, menciptakan tempat yang sempurna untuk menikmati keindahan alam sambil merasakan kehidupan desa yang autentik.
+            </p>
+            <div className="mt-10 flex justify-center">
+              <Link
+                href="/about"
+                className="relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 disabled:pointer-events-none disabled:opacity-40 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300"
+              >
+                <span>View all Posts</span>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </div>
       <div className="text-center my-8">
         <h1 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100 tracking-tight">
           Warta Bengle
@@ -56,13 +75,13 @@ export default function Post({ posts }) {
             ))}
           </div>
           <div className="mt-10 flex justify-center">
-            <Link
-              href="/blog"
-              className="relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 disabled:pointer-events-none disabled:opacity-40 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300"
-            >
-              <span>View all Posts</span>
-            </Link>
-          </div>
+              <Link
+                href="/blog"
+                className="relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 disabled:pointer-events-none disabled:opacity-40 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300"
+              >
+                <span>View all Posts</span>
+              </Link>
+            </div>
         </Container>
       )}
       <div className="mt-10 text-center">
