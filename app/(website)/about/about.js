@@ -38,15 +38,13 @@ export default function About({ authors, settings }) {
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.
         </p>
         <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
+          Nulla facilisi. Phasellus accumsan magna sed augue sollicitudin venenatis. Nullam ac erat ante. Phasellus imperdiet sollicitudin mauris nec viverra.
+        </p>
+        <p>
+          Fusce dignissim, urna a gravida aliquet, eros felis bibendum dui, sit amet volutpat turpis erat in felis. Integer imperdiet scelerisque tortor, sed venenatis odio posuere at. 
         </p>
         <p>
           <Link href="/contact">Get in touch</Link>
