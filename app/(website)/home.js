@@ -32,7 +32,7 @@ export default function Post({ posts }) {
   return (
     <>
       <div className="relative hero-section bg-cover bg-center py-16" style={{ backgroundImage: "url('/img/hero-bengle-padukuhan.png')" }}>
-        <div className="absolute inset-0 bg-black opacity-80"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <Carousel />
         <Container>
           <div className="relative text-center text-white">
@@ -53,8 +53,8 @@ export default function Post({ posts }) {
       </div>
 
       <div className="text-center my-8">
-        <h1 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100 tracking-tight animate-fade-in">
-          Warta Bengle
+        <h1 className="text-4xl font-extrabold text-yellow-400 tracking-tight animate-fade-in">
+          WARTA BENGLE
         </h1>
         <p className="text-lg font-medium text-gray-600 dark:text-gray-400 mt-2 animate-fade-in">
           Kumpulan berita terbaru dan terkini dari Bengle
@@ -120,9 +120,9 @@ export default function Post({ posts }) {
       </div>
 
       {/* Section: Gallery */}
-      <div className="bg-white py-16">
+      <div className="py-16">
         <Container>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Galeri</h2>
+          <h2 className="text-3xl font-bold text-yellow-400 text-center mb-8">Galeri</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
               <Image src="/img/gallery1.jpg" alt="Gallery Image 1" fill className="object-cover" />
@@ -166,9 +166,9 @@ export default function Post({ posts }) {
       </div>
 
       {/* Section: Testimonials */}
-      <div className="bg-white py-16">
+      <div className="py-16">
         <Container>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Apa Kata Orang</h2>
+          <h2 className="text-3xl font-bold text-yellow-400 text-center mb-8">What's their tought?</h2>
           <div className="space-y-8">
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <p className="text-gray-600">"Bengle adalah permata tersembunyi! Keindahan alam dan penduduk yang ramah membuat kunjungan kami tak terlupakan." - Jane Doe</p>
@@ -181,7 +181,7 @@ export default function Post({ posts }) {
       </div>
 
       <div className="mt-10 text-center bg-gray-100 py-16">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <h2 className="text-2xl font-bold text-yellow-400 mb-4">
           Peta Administrasi Padukuhan Bengle
         </h2>
         <div className="inline-block overflow-hidden border rounded-lg p-4 max-w-full mx-auto relative" style={{ width: "50vw", height: "auto", margin: "0 auto" }}>
