@@ -44,7 +44,7 @@ export default function Post({ posts }) {
         <Carousel />
         <Container>
           <div className="relative text-center text-white">
-            <h1 className="text-4xl font-extrabold mb-4 animate-fade-in">Welcome To Bengle Village Website</h1>
+            <h1 className="text-4xl font-extrabold mb-4 animate-fade-in mt-10">Welcome To Bengle Village Website</h1>
             <p className="text-lg font-medium text-gray-200 mt-2 animate-fade-in">
               Padukuhan Bengle, yang terletak di Kalurahan Pucung, Kecamatan Girisubo, Kabupaten Gunung Kidul, Provinsi Daerah Istimewa Yogyakarta, adalah sebuah dusun yang memikat dengan pesona keindahan alamnya yang menakjubkan serta kearifan lokal yang tetap terjaga dengan baik. Terletak di tengah-tengah perbukitan yang hijau dan subur, Bengle menawarkan pemandangan alam yang mempesona dan suasana yang damai, menciptakan tempat yang sempurna untuk menikmati keindahan alam sambil merasakan kehidupan desa yang autentik.
             </p>
