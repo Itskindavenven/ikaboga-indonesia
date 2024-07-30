@@ -18,6 +18,10 @@ export default function Navbar(props) {
       href: "/"
     },
     {
+      label: "Blog",
+      href: "/blog"
+    },
+    {
       label: "About",
       href: "/about"
     },
@@ -25,10 +29,6 @@ export default function Navbar(props) {
       label: "Contact",
       href: "/contact"
     }
-      // {
-      //   label: "Blog",
-      //   href: "/blog"
-      // }
   ];
 
   const rightmenu = [
