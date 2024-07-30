@@ -9,6 +9,7 @@ import { urlForImage } from "@/lib/sanity/image";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
+import ThemeSwitch from "@/components/themeSwitch";
 
 export default function Navbar(props) {
   const leftmenu = [
@@ -16,13 +17,6 @@ export default function Navbar(props) {
       label: "Home",
       href: "/"
     },
-      // {
-      //   label: "Blog",
-      //   href: "/blog"
-      // }
-  ];
-
-  const rightmenu = [
     {
       label: "About",
       href: "/about"
@@ -31,40 +25,26 @@ export default function Navbar(props) {
       label: "Contact",
       href: "/contact"
     }
+      // {
+      //   label: "Blog",
+      //   href: "/blog"
+      // }
+  ];
+
+  const rightmenu = [
+    
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
     <Container>
-      <nav>
+      <nav className="flex justify-between items-center">
         <Disclosure>
           {({ open }) => (
             <>
-              <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
-                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
-                  {leftmenu.map((item, index) => (
-                    <Fragment key={`${item.label}${index}`}>
-                      {item.children && item.children.length > 0 ? (
-                        <DropdownMenu
-                          menu={item}
-                          key={`${item.label}${index}`}
-                          items={item.children}
-                        />
-                      ) : (
-                        <Link
-                          href={item.href}
-                          key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
-                          target={item.external ? "_blank" : ""}
-                          rel={item.external ? "noopener" : ""}>
-                          {item.label}
-                        </Link>
-                      )}
-                    </Fragment>
-                  ))}
-                </div>
-                <div className="flex w-full items-center justify-between md:w-auto">
+              <div className="flex w-full items-center justify-between md:justify-start md:gap-10">
+                <div className="flex items-center justify-start md:order-none md:flex md:w-auto md:flex-1">
                   <Link href="/" className="w-28 dark:hidden">
                     {props.logo ? (
                       <Image
@@ -95,6 +75,60 @@ export default function Navbar(props) {
                       </span>
                     )}
                   </Link>
+                </div>
+                <div className="flex items-center justify-end flex-1">
+                  <div className="hidden md:flex md:items-center md:justify-center md:flex-1">
+                    {leftmenu.map((item, index) => (
+                      <Fragment key={`${item.label}${index}`}>
+                        {item.children && item.children.length > 0 ? (
+                          <DropdownMenu
+                            menu={item}
+                            key={`${item.label}${index}`}
+                            items={item.children}
+                          />
+                        ) : (
+                          <Link
+                            href={item.href}
+                            key={`${item.label}${index}`}
+                            className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                            target={item.external ? "_blank" : ""}
+                            rel={item.external ? "noopener" : ""}>
+                            {item.label}
+                          </Link>
+                        )}
+                      </Fragment>
+                    ))}
+                  </div>
+                  <div className="flex items-center justify-center flex-1">
+                    <ThemeSwitch />
+                  </div>
+                  <div className="hidden md:flex md:items-center md:justify-center md:flex-1">
+                    {rightmenu.map((item, index) => (
+                      <Fragment key={`${item.label}${index}`}>
+                        {item.children && item.children.length > 0 ? (
+                          <DropdownMenu
+                            menu={item}
+                            key={`${item.label}${index}`}
+                            items={item.children}
+                          />
+                        ) : (
+                          <Link
+                            href={item.href}
+                            key={`${item.label}${index}`}
+                            className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                            target={item.external ? "_blank" : ""}
+                            rel={item.external ? "noopener" : ""}>
+                            <span> {item.label}</span>
+                            {item.badge && (
+                              <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">
+                                {item.badge}
+                              </span>
+                            )}
+                          </Link>
+                        )}
+                      </Fragment>
+                    ))}
+                  </div>
                   <Disclosure.Button
                     aria-label="Toggle Menu"
                     className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-500 focus:outline-none dark:text-gray-300 md:hidden ">
@@ -112,39 +146,11 @@ export default function Navbar(props) {
                       {!open && (
                         <path
                           fillRule="evenodd"
-                          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
                         />
                       )}
                     </svg>
                   </Disclosure.Button>
-                </div>
-
-                <div className="order-2 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
-                  {rightmenu.map((item, index) => (
-                    <Fragment key={`${item.label}${index}`}>
-                      {item.children && item.children.length > 0 ? (
-                        <DropdownMenu
-                          menu={item}
-                          key={`${item.label}${index}`}
-                          items={item.children}
-                        />
-                      ) : (
-                        <Link
-                          href={item.href}
-                          key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
-                          target={item.external ? "_blank" : ""}
-                          rel={item.external ? "noopener" : ""}>
-                          <span> {item.label}</span>
-                          {item.badge && (
-                            <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">
-                              {item.badge}
-                            </span>
-                          )}
-                        </Link>
-                      )}
-                    </Fragment>
-                  ))}
                 </div>
               </div>
               <Disclosure.Panel>

@@ -1,5 +1,4 @@
 import Container from "@/components/container";
-import ThemeSwitch from "@/components/themeSwitch";
 import Image from "next/image";
 import { myLoader } from "@/utils/all";
 import VercelLogo from "../public/img/vercel.svg";
@@ -43,7 +42,6 @@ export default function Footer(props) {
             />
           </a>
         </div>
-        <ThemeSwitch />
       </div>
       <Backlink />
     </Container>
