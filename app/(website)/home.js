@@ -8,6 +8,7 @@ import Carousel from "@/components/carousel.client";
 import Draggable from "react-draggable";
 import { FaSearchPlus, FaSearchMinus } from "react-icons/fa";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Post({ posts }) {
   const [zoomLevel, setZoomLevel] = useState(1);
@@ -31,6 +32,13 @@ export default function Post({ posts }) {
 
   return (
     <>
+      <Head>
+        <title>Bengle Village - Desa Bengle, Kalurahan Pucung</title>
+        <meta name="description" content="Situs resmi Warta Bengle, menyajikan informasi terbaru dari Desa Bengle, Kalurahan Pucung." />
+        <meta name="keywords" content="Warta Bengle, Desa Bengle, Kalurahan Pucung, informasi desa, berita desa" />
+        <meta name="robots" content="index, follow" />
+      </Head>
+
       <div className="relative hero-section bg-cover bg-center py-16" style={{ backgroundImage: "url('/img/hero-bengle-padukuhan.png')" }}>
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <Carousel />
@@ -125,16 +133,16 @@ export default function Post({ posts }) {
           <h2 className="text-3xl font-bold text-yellow-400 text-center mb-8">Galeri</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <Image src="/img/gallery1.jpg" alt="Gallery Image 1" fill className="object-cover" />
+              <Image src="/img/senam.jpg" alt="Gallery Image 1" fill className="object-cover" />
             </div>
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <Image src="/img/gallery2.jpg" alt="Gallery Image 2" fill className="object-cover" />
+              <Image src="/img/jamu.jpg" alt="Gallery Image 2" fill className="object-cover" />
             </div>
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <Image src="/img/gallery3.jpg" alt="Gallery Image 3" fill className="object-cover" />
+              <Image src="/img/kegiatan balai desa.jpg" alt="Gallery Image 3" fill className="object-cover" />
             </div>
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <Image src="/img/gallery4.jpg" alt="Gallery Image 4" fill className="object-cover" />
+              <Image src="/img/paud.jpg" alt="Gallery Image 4" fill className="object-cover" />
             </div>
           </div>
         </Container>
@@ -168,7 +176,7 @@ export default function Post({ posts }) {
       {/* Section: Testimonials */}
       <div className="py-16">
         <Container>
-          <h2 className="text-3xl font-bold text-yellow-400 text-center mb-8">What's their tought?</h2>
+          <h2 className="text-3xl font-bold text-yellow-400 text-center mb-8">What's their thought?</h2>
           <div className="space-y-8">
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <p className="text-gray-600">"Bengle adalah permata tersembunyi! Keindahan alam dan penduduk yang ramah membuat kunjungan kami tak terlupakan." - Jane Doe</p>
