@@ -16,10 +16,10 @@ export default function Navbar(props) {
       label: "Home",
       href: "/"
     },
-      {
-        label: "Blog",
-        href: "/blog"
-      }
+      // {
+      //   label: "Blog",
+      //   href: "/blog"
+      // }
   ];
 
   const rightmenu = [
