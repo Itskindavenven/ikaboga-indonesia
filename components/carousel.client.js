@@ -5,9 +5,9 @@ export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "https://picsum.photos/1200/500",
-    "https://picsum.photos/1200/501",
-    "https://picsum.photos/1200/502"
+    "img/rumah dukuh.png",
+    "img/balai desa.png",
+    "img/view pemandangan.png"
   ];
 
   useEffect(() => {
