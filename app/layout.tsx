@@ -3,6 +3,7 @@ import { Providers } from "./providers";
 import { cx } from "@/utils/all";
 import { Inter, Lora } from "next/font/google";
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: {
@@ -81,6 +82,7 @@ export default function RootLayout({
       className={cx(inter.variable, lora.variable)}>
       <body className="antialiased text-gray-800 dark:bg-black dark:text-gray-400">
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
