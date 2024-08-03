@@ -29,7 +29,7 @@ export default function Footer(props) {
       <div className="mt-2 flex items-center justify-between">
         <div className="mt-5">
           <a
-            href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
+            href="https://vercel.com/"
             target="_blank"
             rel="noopener"
             className="relative block w-44">
