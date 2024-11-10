@@ -21,7 +21,7 @@ console.log(projectId);
 
 export default defineConfig({
   name: "default",
-  title: "Padukuhan Bengle - Kalurahan Pucung - Kapanewon Girisubo",
+  title: "IKABOGA INDONESIA- Ikatan ",
   basePath: "/studio",
   projectId: projectId,
   dataset: dataset,

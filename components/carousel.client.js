@@ -5,9 +5,9 @@ export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "img/rumah dukuh.png",
-    "img/balai desa.png",
-    "img/view pemandangan.png"
+    "img/carousel-1.jpg",
+    "img/carousel-2.jpg",
+    "img/carousel-3.jpg"
   ];
 
   useEffect(() => {

@@ -7,57 +7,52 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: {
-    default: "Padukuhan Bengle",
-    template: "%s - Bengle Village"
+    default: "IKABOGA Indonesia",
+    template: "%s - IKABOGA Indonesia"
   },
-  description: "Situs Resmi Padukuhan Bengle.",
-  metadataBase: new URL("https://www.padukuhanBengle.my.id"),
+  description: "Situs Resmi IKABOGA Indonesia",
+  // metadataBase: new URL("https://www.padukuhanBengle.my.id"),
   keywords: [
-    "Padukuhan Bengle",
-    "Bengle",
-    "Bengle Gunungkidul",
-    "Bengle Gunung Kidul",
-    "Padukuhan Bengle Gunungkidul",
-    "Padukuhan Bengle Gunung Kidul",
+    "IKABOGA INDONESIA"
   ],
   robots: {
     index: true,
     follow: true
   },
-  openGraph: {
-    title: "Padukuhan Bengle",
-    description: "Situs Resmi Padukuhan Bengle",
-    url: "https://www.benglevillage.site",
-    type: "website",
-    locale: "id_ID",
-    siteName: "Padukuhan Bengle",
-    images: [
-      {
-        url: "https://www.benglevillage.site",
-        width: 1200,
-        height: 630,
-        alt: "Padukuhan Bengle"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Padukuhan Bengle",
-    description: "Situs Resmi Padukuhan Bengle",
-    images: [
-      {
-        url: "https://www.benglevillage.site",
-        alt: "Padukuhan Bengle"
-      }
-    ]
-  },
-  alternates: {
-    canonical: "https://www.benglevillage.site",
-    languages: {
-      "id-ID": "https://www.benglevillage.site",
-      "en-US": "https://www.benglevillage.site/en"
-    }
-  }
+  // openGraph: {
+  //   title: "Padukuhan Bengle",
+  //   description: "Situs Resmi Padukuhan Bengle",
+  //   url: "https://www.benglevillage.site",
+  //   type: "website",
+  //   locale: "id_ID",
+  //   siteName: "Padukuhan Bengle",
+  //   images: [
+  //     {
+  //       url: "https://www.benglevillage.site",
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "Padukuhan Bengle"
+  //     }
+  //   ]
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Padukuhan Bengle",
+  //   description: "Situs Resmi Padukuhan Bengle",
+  //   images: [
+  //     {
+  //       url: "https://www.benglevillage.site",
+  //       alt: "Padukuhan Bengle"
+  //     }
+  //   ]
+  // },
+  // alternates: {
+  //   canonical: "https://www.benglevillage.site",
+  //   languages: {
+  //     "id-ID": "https://www.benglevillage.site",
+  //     "en-US": "https://www.benglevillage.site/en"
+  //   }
+  // }
 };
 
 const inter = Inter({

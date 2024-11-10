@@ -33,20 +33,20 @@ export default function Post({ posts }) {
   return (
     <>
       <Head>
-        <title>Bengle Village - Desa Bengle, Kalurahan Pucung</title>
-        <meta name="description" content="Situs resmi Warta Bengle, menyajikan informasi terbaru dari Desa Bengle, Kalurahan Pucung." />
-        <meta name="keywords" content="Warta Bengle, Desa Bengle, Kalurahan Pucung, informasi desa, berita desa" />
+        <title>IKABOGA INDONESIA - IKATAN AHLI BOGA INDONESIA </title>
+        <meta name="description" content="Situs resmi IKABOGA INDONESIA (Ikatan Ahli Boga Indonesia)." />
+        <meta name="keywords" content="IKABOGA, Ikatan Ahli Boga, Ikatan Ahli Boga Indonesia, Tata Boga, Indonesia" />
         <meta name="robots" content="index, follow" />
       </Head>
 
-      <div className="relative hero-section bg-cover bg-center py-16" style={{ backgroundImage: "url('/img/hero-bengle-padukuhan.png')" }}>
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+      <div className="relative hero-section bg-cover bg-center py-16">
+        <div className="absolute inset-0 bg-pink-500 opacity-90"></div>
         <Carousel />
         <Container>
           <div className="relative text-center text-white">
-            <h1 className="text-4xl font-extrabold mb-4 animate-fade-in mt-10">Welcome To Bengle Village Website</h1>
+            <h1 className="text-4xl font-extrabold mb-4 animate-fade-in mt-10">Selamat Datang di Website IKABOGA INDONESIA</h1>
             <p className="text-lg font-medium text-gray-200 mt-2 animate-fade-in">
-              Padukuhan Bengle, yang terletak di Kalurahan Pucung, Kecamatan Girisubo, Kabupaten Gunung Kidul, Provinsi Daerah Istimewa Yogyakarta, adalah sebuah dusun yang memikat dengan pesona keindahan alamnya yang menakjubkan serta kearifan lokal yang tetap terjaga dengan baik. Terletak di tengah-tengah perbukitan yang hijau dan subur, Bengle menawarkan pemandangan alam yang mempesona dan suasana yang damai, menciptakan tempat yang sempurna untuk menikmati keindahan alam sambil merasakan kehidupan desa yang autentik.
+              Ikatan Ahli Boga Indonesia (IKABOGA INDONENESIA) berdiri pada tanggal 3 Desember 1987 yang merupakan wadah tunggal Ahli Boga Indonesia. Pendirian ini merupakan realisasi dari gagasan Subkonsorsium Memasak dan Jasa Boga pada Direktorat Pendidikan Masyarakat Ditjen Diklusepora Departemen Pendidikan Nasional yang pada waktu itu dijabat oleh Bapak Prof. Dr. W.P. Napitupulu.
             </p>
             <div className="mt-10 flex justify-center">
               <Link
@@ -61,11 +61,11 @@ export default function Post({ posts }) {
       </div>
 
       <div className="text-center my-8">
-        <h1 className="text-4xl font-extrabold text-yellow-400 tracking-tight animate-fade-in">
-          WARTA BENGLE
+        <h1 className="text-4xl font-extrabold text-pink-400 tracking-tight animate-fade-in">
+          WARTA IKABOGA INDONESIA
         </h1>
         <p className="text-lg font-medium text-gray-600 dark:text-gray-400 mt-2 animate-fade-in">
-          Kumpulan berita terbaru dan terkini dari Bengle
+          Kumpulan berita terbaru dan terkini dari IKABOGA Indonesia
         </p>
       </div>
       {posts && (
@@ -97,59 +97,129 @@ export default function Post({ posts }) {
         </Container>
       )}
 
-      {/* Section: Features */}
-      <div className="bg-gray-100 py-16">
+      <div className="py-16 bg-pink-500">
         <Container>
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Fitur-fitur Bengle</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <div className="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-              <div className="text-4xl mb-4 text-blue-500">
-                <i className="fas fa-tree"></i>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Keindahan Alam</h3>
-              <p className="text-gray-600">Nikmati pemandangan alam yang mempesona dan lingkungan yang tenang di Bengle.</p>
-            </div>
-            <div className="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-              <div className="text-4xl mb-4 text-blue-500">
-                <i className="fas fa-history"></i>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Sejarah yang Kaya</h3>
-              <p className="text-gray-600">Temukan sejarah dan budaya yang kaya yang membuat Bengle unik.</p>
-            </div>
-            <div className="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-              <div className="text-4xl mb-4 text-blue-500">
-                <i className="fas fa-hands-helping"></i>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Kearifan Lokal</h3>
-              <p className="text-gray-600">Berinteraksi dengan komunitas lokal dan pelajari praktik tradisional.</p>
-            </div>
-          </div>
-        </Container>
-      </div>
-
-      {/* Section: Gallery */}
-      <div className="py-16">
-        <Container>
-          <h2 className="text-3xl font-bold text-yellow-400 text-center mb-8">Galeri</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-8">PENGURUS</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
               <Image src="/img/senam.jpg" alt="Gallery Image 1" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Senam Pagi</p>
+              </div>
             </div>
+
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
               <Image src="/img/jamu.jpg" alt="Gallery Image 2" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Pembuatan Jamu Tradisional</p>
+              </div>
             </div>
+
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
               <Image src="/img/kegiatan balai desa.jpg" alt="Gallery Image 3" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Kegiatan di Balai Desa</p>
+              </div>
             </div>
+
             <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
               <Image src="/img/paud.jpg" alt="Gallery Image 4" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Kegiatan PAUD</p>
+              </div>
             </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/senam.jpg" alt="Gallery Image 1" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Senam Pagi</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/jamu.jpg" alt="Gallery Image 2" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Pembuatan Jamu Tradisional</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/kegiatan balai desa.jpg" alt="Gallery Image 3" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Kegiatan di Balai Desa</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/paud.jpg" alt="Gallery Image 4" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Kegiatan PAUD</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/senam.jpg" alt="Gallery Image 1" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Senam Pagi</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/jamu.jpg" alt="Gallery Image 2" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Pembuatan Jamu Tradisional</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/kegiatan balai desa.jpg" alt="Gallery Image 3" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Kegiatan di Balai Desa</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/paud.jpg" alt="Gallery Image 4" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Kegiatan PAUD</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/senam.jpg" alt="Gallery Image 1" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Senam Pagi</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/jamu.jpg" alt="Gallery Image 2" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Pembuatan Jamu Tradisional</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/kegiatan balai desa.jpg" alt="Gallery Image 3" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Kegiatan di Balai Desa</p>
+              </div>
+            </div>
+
+            <div className="relative h-64 bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              <Image src="/img/paud.jpg" alt="Gallery Image 4" fill className="object-cover" />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-2 text-center">
+                <p>Kegiatan PAUD</p>
+              </div>
+            </div>
+            
           </div>
         </Container>
       </div>
 
-      {/* Section: Sumber Daya Bengle */}
-      <div className="bg-gray-100 py-16">
+      
+      {/* <div className="bg-gray-100 py-16">
         <Container>
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Sumber Daya Bengle</h2>
           <div className="space-y-8">
@@ -173,7 +243,6 @@ export default function Post({ posts }) {
         </Container>
       </div>
 
-      {/* Section: Testimonials */}
       <div className="py-16">
         <Container>
           <h2 className="text-3xl font-bold text-yellow-400 text-center mb-8">What's their thought?</h2>
@@ -246,6 +315,5 @@ export default function Post({ posts }) {
           ></iframe>
         </div>
       </div>
-    </>
-  );
-}
+    </> */}</>)}
+    
